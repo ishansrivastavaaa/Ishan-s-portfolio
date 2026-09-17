@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-base-dark: var(--c-base-dark);
+  --color-base-light: var(--c-base-light);
+  --color-brand-green: var(--c-green);
+  --color-brand-orange: var(--c-orange);
+}
+
+:root {
+  --c-base-dark: #111111;
+  --c-base-light: #f4ebd9;
+  --c-green: #3a5043;
+  --c-orange: #eb8c34;
+}
+
+.theme-day {
+  --c-base-dark: #f4ebd9;
+  --c-base-light: #111111;
+  --c-green: #aebfb5;
+  --c-orange: #c75b12;
+}
+
+@layer base {
+  body {
+    cursor: none;
+    background-color: var(--c-base-dark);
+    color: var(--c-base-light);
+  }
+  a, button, input, textarea {
+    /* Ensure hover states don't bring back the default pointer unless we want text cursor */
+  }
+}
+
+@layer utilities {
+  .text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px currentColor;
+  }
+  .text-outline-2 {
+    color: transparent;
+    -webkit-text-stroke: 2px currentColor;
+  }
+}

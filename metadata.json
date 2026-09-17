@@ -1,0 +1,6 @@
+{
+  "name": "Ishan's Portfolio",
+  "description": "Personal portfolio for Ishan, ML Engineer and CSE student.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

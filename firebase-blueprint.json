@@ -1,0 +1,22 @@
+{
+  "entities": {
+    "contactMessage": {
+      "title": "Contact Message",
+      "description": "A message submitted via the contact form.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "maxLength": 100 },
+        "email": { "type": "string", "maxLength": 150 },
+        "message": { "type": "string", "maxLength": 2000 },
+        "createdAt": { "type": "timestamp" }
+      },
+      "required": ["name", "email", "message", "createdAt"]
+    }
+  },
+  "firestore": {
+    "contacts": {
+      "schema": "contactMessage",
+      "description": "Stores incoming contact form messages."
+    }
+  }
+}
